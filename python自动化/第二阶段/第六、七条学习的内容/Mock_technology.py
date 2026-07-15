@@ -67,4 +67,4 @@ def test_mock_server_500(requests_mock):
     # 断言：我们就是期望它报错 500！
     assert response.status_code == 500
     print(f"服务器返回的错误文本是: {response.text}")
-    print("✅ 成功模拟了 500 崩溃场景！")
+    print("✅ success模拟了 500 崩溃场景！")
