@@ -10,7 +10,7 @@ def test_auto_login():
     with sync_playwright() as p:
         print("1. 启动 Chromium 浏览器...")
         # 依旧开启有头模式，放慢动作
-        browser = p.chromium.launch(headless=False, slow_mo=500)
+        browser = p.chromium.launch(headless=True, slow_mo=500)
         page = browser.new_page()
 
         # 访问练习专用的沙盒登录页面

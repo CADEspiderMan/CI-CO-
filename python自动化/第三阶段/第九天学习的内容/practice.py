@@ -10,7 +10,7 @@ def run_my_test():
     # 1. 【修复】开启 Playwright 魔法阵！这是所有操作的前提
     with sync_playwright() as p:
         # 2. 【修复】统一下变量名，都叫 browser
-        browser = p.chromium.launch(headless=False, slow_mo=500)
+        browser = p.chromium.launch(headless=True, slow_mo=500)
         page = browser.new_page()
 
         page.goto("http://quotes.toscrape.com")

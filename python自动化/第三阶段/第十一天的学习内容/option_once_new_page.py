@@ -8,7 +8,7 @@ print("==================================================")
 
 def conquer_challenges():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=1000)
+        browser = p.chromium.launch(headless=True, slow_mo=1000)
         page = browser.new_page()
 
         # ------------------- 挑战 1：下拉框 -------------------
