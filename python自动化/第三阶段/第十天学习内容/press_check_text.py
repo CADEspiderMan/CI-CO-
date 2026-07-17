@@ -9,7 +9,7 @@ print("==================================================")
 def manage_todos():
     with sync_playwright() as p:
         print("1. 启动魔法浏览器...")
-        browser = p.chromium.launch(headless=False, slow_mo=800)  # 放慢动作方便观察
+        browser = p.chromium.launch(headless=True, slow_mo=800)  # 放慢动作方便观察
         page = browser.new_page()
 
         # 访问经典的 TodoMVC 待办事项沙盒网站
