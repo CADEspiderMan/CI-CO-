@@ -25,5 +25,5 @@ jobs:
         run: playwright install chromium
 
       - name: Run Pytest
-        run: pytest 第三阶段/第十天学习的内容/test_sauce_checkout.py -vs
+        run: pytest tests/ -vs
 
